@@ -1,11 +1,19 @@
 'use client'
 import { useState } from 'react'
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
 import { Dialog } from "@headlessui/react"
 import { CgMenuHotdog } from "react-icons/cg"
+import { VscChevronRight } from "react-icons/vsc"
 import { LiaDoorClosedSolid } from "react-icons/lia"
 import Logo from "../compoenets/Logo"
 
 const navigation = [
+  { name: 'Main', href: '#' },
+ 
+]
+
+const mobileNavigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
@@ -33,13 +41,39 @@ export default function Navbar() {
             <CgMenuHotdog className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
-              {item.name}
-            </a>
-          ))}
-        </div>
+        <Popover className="relative">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
+        <span>Menu</span>
+        <VscChevronRight className="h-5 w-5" aria-hidden="true" />
+      </Popover.Button>
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
+      >
+        <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          </div>
+          <div className="p-4">
+              {navigation.map((item) => (
+                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"> 
+                  <div>
+                    <a href={item.href} className="font-semibold text-gray-900">
+                      {item.name}
+                      <span className="absolute inset-0" />
+                    </a>
+                    <p className="mt-1 text-gray-600">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+        </Popover.Panel>
+      </Transition>
+    </Popover>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-white">
             Log in <span aria-hidden="true">&rarr;</span>
@@ -51,7 +85,7 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-motdark-700 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Motsinger Development</span>
               <Logo />
             </a>
             <button
@@ -66,7 +100,7 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
+                {mobileNavigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}

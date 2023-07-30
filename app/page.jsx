@@ -1,5 +1,5 @@
 import Navbar from "./ui/Navbar";
-import Example from "./ui/test";
+
 
 
 
