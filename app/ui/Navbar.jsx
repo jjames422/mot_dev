@@ -69,7 +69,14 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md ">
+                
+              <div class="relative block m-10 font-VT323 uppercase text-white text-25"></div>
+              <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
+              <div class="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> <div class="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
+              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
+                
                 <div className="p-4">
                   {menu.map((item) => (
                     <div
@@ -89,7 +96,7 @@ export default function Example() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -100,8 +107,9 @@ export default function Example() {
                       {item.name}
                     </a>
                   ))}
-                </div>
+                </div> */}
               </Popover.Panel>
+            
             </Transition>
           </Popover>
 
