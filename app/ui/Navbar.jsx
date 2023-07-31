@@ -71,12 +71,12 @@ export default function Example() {
             >
             
               <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md'> 
-              <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
-              <div class="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> 
-              <div class="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
-              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
-                
-              
+              <div className="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white  z-[-1]"></div>
+              <div className="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> 
+              <div className="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
+              <div className="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
+                {/*outline of border  */}
+           
              
                 
                 <div className="p-4">
@@ -118,7 +118,7 @@ export default function Example() {
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-2xl font-semibold leading-6 text-motteal-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Log in
           </a>
         </div>
       </nav>
