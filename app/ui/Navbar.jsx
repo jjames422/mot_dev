@@ -70,14 +70,14 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
             
-              <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden square-3xl bg-black'> 
-              
-                
-              
-            {/*   <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
+              <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md'> 
+              <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
               <div class="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> 
               <div class="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
-              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div>  */}
+              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
+                
+              
+             
                 
                 <div className="p-4">
                   {menu.map((item) => (
