@@ -2,6 +2,8 @@
 import Logo from '@/components/Logo'
 import MotArrow from '@/componentsicons/MotArrow'
 import MotBurger from '@/componentsicons/MotBurger'
+import MotEmail from '@/componentsicons/MotEmail'
+import MotPig from '@/componentsicons/MotPig'
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
@@ -16,11 +18,13 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const menu = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Products', description: 'Personal Cloud, Secure Email, and VPN', href: '#', icon: MotEmail },
+  { name: 'Pricing', description: 'See how much we take', href: '#', icon: MotPig },
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Wordpress', description: 'Wordpress Hosting, Design', href: '#', icon: SquaresPlusIcon },
+  { name: 'Hosting', description: 'Full Enterprise Cloud, VPS, Dedicated', href: '#', icon: ArrowPathIcon },
+  { name: 'Web Development', description: 'Websites, Headless, iOS, Google Play', href: '#', icon: ArrowPathIcon },
+  { name: 'For Business', description: 'Business Email, Server, Tech Projects', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -35,7 +39,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-motdark-700">
+    <header className="">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -71,10 +75,11 @@ export default function Example() {
             >
             
               <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md'> 
-              <div className="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white  z-[-1]"></div>
-              <div className="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> 
-              <div className="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
-              <div className="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
+              <div id='4' className="absolute top-6 bottom-6 left-[-12px] right-[-14px] bg-white outline-motviolt-50 outline outline-8 z-[-2]"></div>
+              <div id='3'className="absolute top-9 bottom-9 left-[-22px] right-[-22px] bg-white outline-motviolt-50 outline outline-8 z-[-3]"></div> 
+              <div id='2 box'className="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-0] "></div>
+              <div id='1'className="absolute top-12 bottom-12 left-[-30px] right-[-30px] bg-white outline-motviolt-50 outline outline-8 z-[-5]"></div>
+              <div id='4' className="absolute top-2 bottom-2 left-[-20px] right-[-20px] bg-white outline-motviolt-50 outline outline-8 z-[-2]"></div> 
                 {/*outline of border  */}
            
              
