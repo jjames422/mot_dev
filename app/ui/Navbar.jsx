@@ -70,12 +70,14 @@ export default function Example() {
               leaveTo="opacity-0 translate-y-1"
             >
             
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md ">
+              <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden square-3xl bg-black'> 
+              
                 
-              <div class="relative block m-10 font-VT323 uppercase text-white text-25"></div>
-              <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
-              <div class="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> <div class="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
-              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div> 
+              
+            {/*   <div class="absolute top-6 bottom-6 left-[-15px] right-[-15px] bg-white z-[-1]"></div>
+              <div class="absolute top-9 bottom-9 left-[-24px] right-[-24px] bg-white z-[-2]"></div> 
+              <div class="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-3]"></div>
+              <div class="absolute top-12 bottom-12 left-[-32px] right-[-32px] bg-white z-0"></div>  */}
                 
                 <div className="p-4">
                   {menu.map((item) => (
@@ -151,7 +153,7 @@ export default function Example() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...menu, ...callsToAction].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
