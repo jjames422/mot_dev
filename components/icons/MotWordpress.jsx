@@ -39,5 +39,5 @@ const MotWordpress = (props) => (
     />
   </svg>
 )
-export default SvgComponent
+export default MotWordpress
 

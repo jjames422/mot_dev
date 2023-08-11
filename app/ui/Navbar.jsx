@@ -1,18 +1,19 @@
 'use client'
-import Logo from '@/components/Logo'
-import MotArrow from '@/componentsicons/MotArrow'
-import MotBurger from '@/componentsicons/MotBurger'
-import MotEmail from '@/componentsicons/MotEmail'
-import MotPig from '@/componentsicons/MotPig'
+import Logo from 'components/Logo'
+import MotArrow from 'components/icons/MotArrow'
+import MotBurger from 'components/icons/MotBurger'
+import MotEmail from 'components/icons/MotEmail'
+import MotPig from 'components/icons/MotPig'
+import MotWordpress from 'components/icons/MotWordpress'
+import MotDev from 'components/icons/MotDev'
+import MotUI from 'components/icons/MotUI'
+import MotHosting from '@/componentsicons/MotHosting'
+
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
   FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
@@ -21,15 +22,15 @@ const menu = [
   { name: 'Products', description: 'Personal Cloud, Secure Email, and VPN', href: '#', icon: MotEmail },
   { name: 'Pricing', description: 'See how much we take', href: '#', icon: MotPig },
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Wordpress', description: 'Wordpress Hosting, Design', href: '#', icon: SquaresPlusIcon },
-  { name: 'Hosting', description: 'Full Enterprise Cloud, VPS, Dedicated', href: '#', icon: ArrowPathIcon },
-  { name: 'Web Development', description: 'Websites, Headless, iOS, Google Play', href: '#', icon: ArrowPathIcon },
+  { name: 'Wordpress', description: 'Wordpress Hosting, Design', href: '#', icon: MotWordpress },
+  { name: 'Hosting', description: 'Full Enterprise Cloud, VPS, Dedicated', href: '#', icon: MotHosting },
+  { name: 'Web Development', description: 'Websites, Headless, iOS, Google Play', href: '#', icon: MotDev },
   { name: 'For Business', description: 'Business Email, Server, Tech Projects', href: '#', icon: ArrowPathIcon },
 ]
-const callsToAction = [
+/* const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+] */
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
