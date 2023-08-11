@@ -75,13 +75,16 @@ export default function Example() {
             >
             
               <Popover.Panel className='absolute -left-8 top-full z-10 mt-3 w-screen max-w-md'> 
-              <div id='4' className="absolute top-6 bottom-6 left-[-12px] right-[-14px] bg-white outline-motviolt-50 outline outline-8 z-[-2]"></div>
-              <div id='3'className="absolute top-9 bottom-9 left-[-22px] right-[-22px] bg-white outline-motviolt-50 outline outline-8 z-[-3]"></div> 
+              
+              <div id='3'className="absolute top-5 bottom-5 left-[-29px] right-[-29px] bg-white outline-motviolt-50 outline outline-8 z-[-3]"></div> 
+              <div id='2 box'className="absolute top-5 bottom-5 left-[-30px] right-[-30px] bg-white z-[0] "></div>
+              <div id='2 box'className="absolute top-8 bottom-8 left-[-37px] right-[-37px] bg-white z-[-0] "></div>
+              <div id='1'className="absolute top-8 bottom-8 left-[-36px] right-[-36px] bg-white outline-motviolt-50 outline outline-8 z-[-5]"></div>
               <div id='2 box'className="absolute top-4 bottom-4 left-[-6px] right-[-6px] bg-white z-[-0] "></div>
-              <div id='1'className="absolute top-12 bottom-12 left-[-30px] right-[-30px] bg-white outline-motviolt-50 outline outline-8 z-[-5]"></div>
               <div id='4' className="absolute top-2 bottom-2 left-[-20px] right-[-20px] bg-white outline-motviolt-50 outline outline-8 z-[-2]"></div> 
                 {/*outline of border  */}
-           
+                
+        
              
                 
                 <div className="p-4">
@@ -115,12 +118,17 @@ export default function Example() {
                     </a>
                   ))}
                 </div> */}
+        
+    
+
               </Popover.Panel>
             
             </Transition>
+            
           </Popover>
 
         </Popover.Group>
+        
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-2xl font-semibold leading-6 text-motteal-900">
             Log in
@@ -203,6 +211,7 @@ export default function Example() {
           </div>
         </Dialog.Panel>
       </Dialog>
+ 
     </header>
   )
 }

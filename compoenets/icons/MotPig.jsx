@@ -1,5 +1,5 @@
-import * as React from "react"
-const MotPig = (props) => (
+
+const Motpig = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -14,7 +14,7 @@ const MotPig = (props) => (
   >
     <style>
       {
-        ".st0{fill:#472b6d}.st1{fill:#bfe2cd}.st2{fill:#180f43}.st3{fill:#e9e5e1}.st4{fill:#252158}.st6{fill:#392f91}.st7{fill:#4a53a4}"
+        ".st0{fill:#ae00fb}.st1{fill:#b5ffd9}.st2{fill:#170055}.st3{fill:#e9e5e1}.st4{fill:#252158}.st5{fill:#c16aef}.st6{fill:#3e00ff}"
       }
     </style>
     <path
@@ -31,15 +31,11 @@ const MotPig = (props) => (
     />
     <path d="M357.5 215h35v35h-35zM77.5 145h70v70h-70z" className="st3" />
     <path
-      d="M322.5 460h70v35h-70zM217.5 460h70v35h-70zM77.5 460h70v35h-70zM7.5 390h35v35h70v-35h105v35h70v-35h-35v-35h-210v-35h-35M287.5 250h35v105h-35zM322.5 215h35v35h-35zM287.5 5h35v70h-35zM182.5 5h35v70h-35z"
+      d="M322.5 460h70v35h-70zM217.5 460h70v35h-70zM77.5 460h70v35h-70zM7.5 390h35v35h70v-35h105v35h70v-35h-35v-35h-210v-35h-35M287.5 250h35v105h-35zM322.5 215h35v35h-35z"
       className="st4"
     />
-    <path
-      d="M112.5 425h105v35h-105z"
-      style={{
-        fill: "#5c3b72",
-      }}
-    />
+    <path d="M287.5 5h35v70h-35zM182.5 5h35v70h-35z" className="st2" />
+    <path d="M112.5 425h105v35h-105z" className="st5" />
     <path
       d="M322.5 320h35v35h-35zM357.5 250v35h35v70h-35v35h105v-35h-35v-70h35v70h35V250z"
       className="st6"
@@ -51,8 +47,8 @@ const MotPig = (props) => (
     <path d="M112.5 145v-35h105v35h-35v70h-105v-70z" className="st3" />
     <path
       d="M322.5 250h35v70h-35zM392.5 215h70v35h-70zM252.5 145h35v35h-35zM287.5 110h70v35h-70zM112.5 110v35h35v70h35v-70h35v-35zM392.5 75V5h-70v35h35v35zM252.5 40h35V5h-70v70h35z"
-      className="st7"
+      className="st5"
     />
   </svg>
 )
-export default MotPig
+export default Motpig
