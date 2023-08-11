@@ -1,5 +1,6 @@
 'use client'
 
+import TextBoxBreak from "@/componentsTextBoxBreak"
 import PurpleButton from "@/componentsicons/PurpleButton"
 
 
@@ -48,6 +49,7 @@ export default function Hero() {
       
         </div>
       </div>
+      <TextBoxBreak />
     </div>
   )
 }
