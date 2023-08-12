@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
-
-export class page extends Component {
-  render() {
-    return (
-      <div>page</div>
-    )
-  }
+export default function page() {
+  return (
+    <div>
+      Enter
+    </div>
+  );
 }
 
-export default page
