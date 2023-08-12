@@ -34,7 +34,7 @@ export default function Hero() {
               We like tacos and video gamessssss brown chicken brown cow
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <button className="text-white bg-[url('app/ui/svgs/Button 1.svg')]">Click Me
+              <button className="text-white ">Click Me
                 
       
               </button>
