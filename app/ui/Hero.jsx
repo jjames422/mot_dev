@@ -1,7 +1,7 @@
 'use client'
 
 import TextBoxBreak from "@/componentsTextBoxBreak"
-import PurpleButton from "@/componentsicons/PurpleButton"
+
 
 
 export default function Hero() {
@@ -34,8 +34,10 @@ export default function Hero() {
               We like tacos and video gamessssss brown chicken brown cow
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a><PurpleButton className='h-20 items-center'/>
-               </a>
+              <button className="text-white bg-[url('app/ui/svgs/Button 1.svg')]">Click Me
+                
+      
+              </button>
              
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
