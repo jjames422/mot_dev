@@ -1,4 +1,4 @@
-
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -41,6 +41,12 @@ module.exports = {
       backgroundImage: {
         
       },
+
+    },
+    fontFamily: {
+      start: ['Press Start 2P', ...defaultTheme.fontFamily.mono],
+      vt: ['VT323', ...defaultTheme.fontFamily.mono],
+     
     },
   },
   plugins: [],

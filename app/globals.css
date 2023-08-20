@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Press Start 2P', 'cursive';
+  font-weight: 400; 
+  font-style: Normal;
+  font-named-instance: 'Regular';
+  src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+}
+@font-face {
+  font-family: 'VT323', monospace;
+  font-weight: 400; 
+  font-style: Normal;
+  font-named-instance: 'Regular';
+  src: url('/public/fonts/VT323-Regular.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
